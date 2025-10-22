@@ -1,0 +1,40 @@
+﻿doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+  body
+    // Navbar
+    nav.navbar.navbar-expand-lg.fixed-top.bg-light.navbar-light
+      button.navbar-toggler(type='button' data-mdb-collapse-init='' data-mdb-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        i.fas.fa-bars
+      .container.d-flex.justify-content-center
+        .row
+          .col-12.d-flex.justify-content-center.mb-3
+            a.navbar-brand(href='#')
+              img#MDB-logo(src='https://mdbcdn.b-cdn.net/wp-content/uploads/2018/06/logo-mdb-jquery-small.png' alt='MDB Logo' draggable='false' height='30')
+          .col-12.d-flex.justify-content-center
+            #navbarSupportedContent.collapse.navbar-collapse
+              ul.navbar-nav.align-items-center.mx-auto
+                li.nav-item
+                  a.nav-link.mx-2(href='#!') Post
+                li.nav-item
+                  a.nav-link.mx-2(href='#!') Alerts
+                li.nav-item
+                  a.nav-link.mx-2(href='#!') Trips
+    // Navbar
+
+    .container
+      block content
+      footer
+        .row
+          .col-12
+            small &copy;
+
+    // Scripts
+    script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
+    script(src='/javascripts/bootstrap.min.js')

@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h2 Summary
+  ul
+    li Total Income: $#{summary.totalIncome}
+    li Total Expenses: $#{summary.totalExpenses}
+    li Balance: $#{summary.balance}
+
+  h2 Recent Transactions
+  if recentTransactions.length
+    table
+      thead
+        tr
+          th Date
+          th Description
+          th Category
+          th Amount
+      tbody
+        each tx in recentTransactions
+          tr
+            td #{tx.date}
+            td #{tx.description}
+            td #{tx.category}
+            td $#{tx.amount}
+  else
+    p No recent transactions.
