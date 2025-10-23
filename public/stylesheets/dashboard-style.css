@@ -38,8 +38,8 @@ h2.balance
 
 .category-list .items,
 .spend-list .items {
-  max-height: 250px; /* або будь-яка інша висота */
-  overflow-y: auto;  /* дозволяє вертикальний скрол */
+  max-height: 250px;
+  overflow-y: auto;  
   overflow-x: hidden;
 }
 
