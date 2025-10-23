@@ -4,6 +4,13 @@ const login = function (req, res) {
         title: 'Login Page'});
 };
 
+const signup = function (req, res) {
+    res.render('signup', {
+        title: 'Sighn Up Page'});
+};
+
+
 module.exports = {
-    login
+    login,
+    signup
 };

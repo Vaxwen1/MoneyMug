@@ -8,6 +8,8 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/dashboard-style.css')
     link(rel='stylesheet', href='/stylesheets/login-style.css')
+    link(rel='stylesheet', href='/stylesheets/signup.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap')
   body
     nav.navbar
       a(href='/').logo MoneyMug 
@@ -19,22 +21,23 @@ html
         li
           a(href='/login') Login
         li
-          a(href='/singun') Sing up
+          a(href='/signup') Sing up
         li
-          a(href='#') Services
+          a(href='/about') About
         li
           a(href='#') Contact
 
     // Main content grows to fill space
     main.flex-fill
       .container
+        h1.title= title  
         block content
 
     // Footer
     footer.text-center.text-white.footer-custom
       .text-center.p-3
-        | &copy; 2025 Copyright:
-        a.text-white(href='https://mdbootstrap.com/') MDBootstrap.com
+        | &copy; 2025  
+        a.text-white(href='https://github.com/Vaxwen1/MoneyMug.git') Vladislav Onishchenko
 
     // Scripts
     script.

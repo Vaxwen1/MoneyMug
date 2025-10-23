@@ -9,6 +9,7 @@ router.get('/', ctrlDashboard.home);
 
 /* User pages */
 router.get('/login', ctrlUsers.login);
+router.get('/signup', ctrlUsers.signup);
 
 /* Other pages */
 router.get('/about', ctrlOthers.about);
