@@ -1,0 +1,120 @@
+/* Dashboard */
+h2.balance
+{
+  margin-top: 1em;
+  text-align: center;
+}
+
+.category-list, .spend-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+
+  img.chart
+  {
+    min-width: 50%;
+  }
+
+  .dashboard-container
+  {
+    flex-direction: column;
+  }
+
+  .category-list, .spend-list
+  {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+}
+
+
+.category-list .items,
+.spend-list .items {
+  max-height: 250px; /* або будь-яка інша висота */
+  overflow-y: auto;  /* дозволяє вертикальний скрол */
+  overflow-x: hidden;
+}
+
+img.chart {
+  display: block;
+  margin: 2em auto; 
+  max-width: 30%;   
+  height: auto;
+}
+
+.category-list li, .spend-list li {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  transition: background-color 0.3s;
+}
+
+.category-list li:hover, .spend-list li:hover {
+  background-color: #95B7CA;
+}
+
+.category-list li.active {
+  background-color: #4C7F9A;
+  color: #fff;
+  font-weight: bold;
+}
+
+li.add-category, li.add-expense {
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  background-color: #EABA6B;
+}
+
+.category-list li{
+  text-align: center;
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: space-around;   
+  align-items: flex-start;     
+  margin: auto;                
+  max-width: 900px;
+  padding-bottom: 1em;
+}
+
+
+.spend-list {
+  min-width: 20em;
+} 
+
+.spend-header, .category-header {
+  text-align: center;
+  padding: 12px 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  background-color: #5ca3c9;
+}
+
+.spend-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+} 
+
+.spend-list li.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+li.item span.expense
+{
+  color: red;
+}

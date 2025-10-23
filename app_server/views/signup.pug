@@ -1,0 +1,40 @@
+extends layout
+
+block content
+  section.vh-100.login-section
+    .container-fluid.h-custom
+      .row.d-flex.justify-content-center.align-items-center.h-100
+        .col-md-9.col-lg-6.col-xl-5
+          img.img-fluid(src="/img/money_mug.png", alt="MoneyMug Logo")
+          h2.text-center MoneyMug
+        .col-md-8.col-lg-6.col-xl-4.offset-xl-1
+          form(action="/signup" method="POST")
+
+            // Full Name
+            .form-outline.mb-3(data-mdb-input-init)
+              label.form-label(for="name") Full Name:
+              input#name.form-control.form-control-lg(type="text" name="name" placeholder="Full Name" required)
+              
+
+            // Email
+            .form-outline.mb-3(data-mdb-input-init)
+              label.form-label(for="email") Email Address:
+              input#email.form-control.form-control-lg(type="email" name="email" placeholder="Email Address" required)
+              
+
+            // Password
+            .form-outline.mb-3(data-mdb-input-init)
+              label.form-label(for="password") Password:
+              input#password.form-control.form-control-lg(type="password" name="password" placeholder="Password" required)
+
+            // Confirm Password
+            .form-outline.mb-3(data-mdb-input-init)
+              label.form-label(for="confirm-password") Confirm Password:
+              input#confirm-password.form-control.form-control-lg(type="password" name="confirm_password" placeholder="Confirm Password" required)
+              
+
+            .text-center.text-lg-start.mt-4.pt-2
+              button.btn.btn-primary.btn-lg(type="submit") Register
+              p.small.fw-bold.mt-2.pt-1.mb-0
+                | Already have an account? 
+                a.link-danger(href="/login") Login
