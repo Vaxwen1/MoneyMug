@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+
 let dbURI = 'mongodb://localhost/MoneyMug';
 if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGODB_URI;

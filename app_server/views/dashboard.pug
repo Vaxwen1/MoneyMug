@@ -1,27 +1,47 @@
 extends layout
 
 block content
-  h2 Summary
-  ul
-    li Total Income: $#{summary.totalIncome}
-    li Total Expenses: $#{summary.totalExpenses}
-    li Balance: $#{summary.balance}
+  h2.title Balance: 256$
 
-  h2 Recent Transactions
-  if recentTransactions.length
-    table
-      thead
-        tr
-          th Date
-          th Description
-          th Category
-          th Amount
-      tbody
-        each tx in recentTransactions
-          tr
-            td #{tx.date}
-            td #{tx.description}
-            td #{tx.category}
-            td $#{tx.amount}
-  else
-    p No recent transactions.
+  .dashboard-container
+    ul.category-list
+      .category-header Categories
+      .items
+        li.item Utilities
+        li.item.active Food
+        li.item Subscriptions
+        li.item Transport
+        li.item Health
+        li.item Restaurant
+
+      li.add-category + Add category
+
+    ul.spend-list
+      .spend-header Spend: 356$
+      .items
+        li.item
+          span Mcdonald's
+          span.expense -20$
+        li.item.active
+          span KFC
+          span.expense -20$
+        li.item 
+          span Mcdonald's
+          span.expense -20$
+        li.item
+          span Mcdonald's
+          span.expense -30$
+        li.item
+          span Mcdonald's
+          span.expense -50$
+        li.item
+          span Mcdonald's
+          span.expense -50$
+        li.item
+          span Mcdonald's
+          span.expense -50$
+        li.item
+          span Mcdonald's
+          span.expense -50$
+      li.add-expense + Add expense
+
