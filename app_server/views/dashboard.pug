@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h2.balance Balance: 256$
+  h2.balance #{summary.balance}$
 
   img.chart(src="/img/chart.png")
 
@@ -9,41 +9,16 @@ block content
     ul.category-list
       .category-header Categories
       .items
-        li.item Utilities
-        li.item.active Food
-        li.item Subscriptions
-        li.item Transport
-        li.item Health
-        li.item Restaurant
-
+        each category in categories
+          li.item(data-id=category.id, style=`color: ${category.categoryColor}`) #{category.categoryName}
       li.add-category + Add category
 
     ul.spend-list
-      .spend-header Spend: 356$
-      .items
-        li.item
-          span Mcdonald's
-          span.expense -20$
-        li.item.active
-          span KFC
-          span.expense -20$
-        li.item 
-          span Mcdonald's
-          span.expense -20$
-        li.item
-          span Mcdonald's
-          span.expense -30$
-        li.item
-          span Mcdonald's
-          span.expense -50$
-        li.item
-          span Mcdonald's
-          span.expense -50$
-        li.item
-          span Mcdonald's
-          span.expense -50$
-        li.item
-          span Mcdonald's
-          span.expense -50$
+      .spend-header Transactions
+      .items#transaction-list
+        each tx in recentTransactions
+          li.item(data-category-id=tx.categoryId)
+            span #{tx.description}
+            span.expense #{tx.amount}$
       li.add-expense + Add expense
 

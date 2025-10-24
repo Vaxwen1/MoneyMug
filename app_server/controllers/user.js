@@ -6,7 +6,7 @@ const login = function (req, res) {
 
 const signup = function (req, res) {
     res.render('signup', {
-        title: 'Sighn Up Page'});
+        title: 'Sign Up Page'});
 };
 
 

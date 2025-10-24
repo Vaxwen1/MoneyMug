@@ -23,7 +23,7 @@ main.flex-fill {
     flex: 1;
 }
 
-/* Navbar styles */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -125,11 +125,11 @@ main.flex-fill {
 form label {
   display: block !important;
 }
-/*about*/
-/* About section styling */
+
+/* About section */
 .about-section {
     padding: 50px 20px;
-    background-color: #FDF7EE; /* light, warm background */
+    background-color: #FDF7EE;
 }
 
 .about-section .about-text {
@@ -151,6 +151,17 @@ form label {
         font-size: 16px;
     }
 }
+
+@media (max-width: 500px) {
+    .about-section {
+        padding: 1px 1px;
+    }
+
+    .about-section .about-text {
+        font-size: 12px;
+    }
+}
+
 
 
 

@@ -1,0 +1,87 @@
+/* Registration Form Section */
+.login-section {
+    padding: 50px 0;
+    background-color: #FDF7EE;
+}
+
+h2.text-center
+{
+    color: #cfb102;
+}
+
+.login-section img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4C7F9A;
+}
+
+.form-outline {
+    margin-bottom: 20px;
+}
+
+.form-outline input {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-outline input:focus {
+    border-color: #4C7F9A;
+    box-shadow: 0 0 5px rgba(76,127,154,0.5);
+    outline: none;
+}
+
+.form-outline label {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+button.btn-primary {
+    background-color: #4C7F9A;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    padding: 12px 30px;
+    transition: background-color 0.3s;
+}
+
+button.btn-primary:hover {
+    background-color: #395C6E;
+}
+
+p.small.fw-bold a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+p.small.fw-bold a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+}

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-let dbURI = 'mongodb://localhost/MoneyMug';
+let dbURI = 'mongodb://localhost/moneymug';
 if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGODB_URI;
 }
@@ -42,4 +42,6 @@ process.on('SIGTERM', () => {
   });
 });
 
-require('./locations');
+require('./transaction');
+require('./category');
+require('./user');
