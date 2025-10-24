@@ -39,7 +39,6 @@ const home = async (req, res) => {
         }
       ],
       recentTransactions: [
-        // Temporary until you add Transaction model
         { description: 'Dunnes Store', amount: -150, date: '2025-10-20', categoryId: 1 },
         { description: "Mcdonald's", amount: -20, date: '2025-10-15', categoryId: 4 },
         { description: 'Electric Bill', amount: -75, date: '2025-10-10', categoryId: 2 }

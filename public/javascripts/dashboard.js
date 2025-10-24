@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // Filter transactions
       transactions.forEach(tx => {
         if (tx.dataset.categoryId === selectedId) {
-          tx.style.display = 'flex'; // show
+          tx.style.display = 'flex';
         } else {
-          tx.style.display = 'none'; // hide
+          tx.style.display = 'none';
         }
       });
     });
