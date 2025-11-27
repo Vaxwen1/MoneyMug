@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-require('../models/category');
+require('../../app_api/models/category');
 const Category = mongoose.model('Category');
 
 const home = async (req, res) => {
