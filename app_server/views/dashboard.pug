@@ -10,7 +10,7 @@ block content
       .category-header Categories
       .items
         each category in categories
-          li.item(data-id=category.id, style=`color: ${category.categoryColor}`) #{category.categoryName}
+          li.item(data-id=category._id, style=`color: ${category.categoryColor}`) #{category.categoryName}
       li.add-category + Add category
 
     ul.spend-list

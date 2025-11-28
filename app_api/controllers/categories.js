@@ -1,7 +1,6 @@
 // ----------------------------- REQUIRE -----------------------------
-const mongoose = require('mongoose');
 const Category = require('../models/category');
-const category = require('../models/category');
+
 
 
 // ----------------------------- METHODS -----------------------------

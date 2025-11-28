@@ -1,43 +1,38 @@
+
 // ----------------------------- REQUIRE -----------------------------
-const mongoose = require('mongoose');
 const Transaction = require('../models/transaction');
 
 // ----------------------------- METHODS -----------------------------
-const transactionsCreate = function (req, res) {
-    res
-        .status(200)
-        .json({ "status": "success"});
- };
-const transactionListByRicentDate = function (req, res) {
-    res
-        .status(200)
-        .json({ "status": "success"});
- };
-const transactionsReadOne = function (req, res) {
-    res
-        .status(200)
-        .json({ "status": "success"});
- };
-const transactionsUpdateOne = function (req, res) {
-    res
-        .status(200)
-        .json({ "status": "success"});
- };
-const transactionsDeleteOne = function (req, res) {
-    res
-        .status(200)
-        .json({ "status": "success"});
- };
 
+// GET /api/transactions/recent
+const transactionListByRecentDate = async (req, res) => {
+  try {
+    const transactions = await Transaction
+      .find({})           
+      .sort({ date: -1 }) 
+      .limit(20)
+      .lean();
 
-
-// ----------------------------- EXPORTS -----------------------------
-
-module.exports = {
-    transactionsCreate,
-    transactionListByRicentDate,
-    transactionsReadOne,
-    transactionsUpdateOne,
-    transactionsDeleteOne
+    res.status(200).json(transactions);
+  } catch (err) {
+    console.error('Error retrieving transactions:', err);
+    res.status(500).json({
+      message: 'Error retrieving transactions',
+      error: err
+    });
+  }
 };
 
+const transactionsCreate     = (req, res) => res.status(200).json({ status: 'success' });
+const transactionsReadOne    = (req, res) => res.status(200).json({ status: 'success' });
+const transactionsUpdateOne  = (req, res) => res.status(200).json({ status: 'success' });
+const transactionsDeleteOne  = (req, res) => res.status(200).json({ status: 'success' });
+
+// ----------------------------- EXPORTS -----------------------------
+module.exports = {
+  transactionListByRecentDate,
+  transactionsCreate,
+  transactionsReadOne,
+  transactionsUpdateOne,
+  transactionsDeleteOne
+};
