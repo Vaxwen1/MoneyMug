@@ -5,10 +5,11 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
+require('./app_api/models/db');
+
 const apiRoutes = require('./app_api/routes/index');
 const serverRoutes = require('./app_server/routes/index');
 
-require('./app_api/models/db');
 
 const app = express();
 
@@ -40,13 +41,15 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// Статичні файли з public (css, images і т.д.)
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Статичні файли з app_public
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// app_public static files
 app.use(express.static(path.join(__dirname, 'app_public')));
 
-// 🔹 Статичні файли зібраного Angular
+// Angular static files
 app.use(
   express.static(
     path.join(__dirname, 'app_public')
