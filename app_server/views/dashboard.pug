@@ -1,24 +1,26 @@
 extends layout
 
 block content
-  h2.balance #{summary.balance}$
+  //- h2.balance #{summary.balance}$
 
-  img.chart(src="/img/chart.png")
+  //- img.chart(src="/img/chart.png")
 
-  .dashboard-container
-    ul.category-list
-      .category-header Categories
-      .items
-        each category in categories
-          li.item(data-id=category._id, style=`color: ${category.categoryColor}`) #{category.categoryName}
-      li.add-category + Add category
+  //- .dashboard-container
+  //-   ul.category-list
+  //-     .category-header Categories
+  //-     .items
+  //-       each category in categories
+  //-         li.item(data-id=category._id, style=`color: ${category.categoryColor}`) #{category.categoryName}
+  //-     li.add-category + Add category
 
-    ul.spend-list
-      .spend-header Transactions
-      .items#transaction-list
-        each tx in recentTransactions
-          li.item(data-category-id=tx.categoryId)
-            span #{tx.description}
-            span.expense #{tx.amount}$
-      li.add-expense + Add expense
+  //-   ul.spend-list
+  //-     .spend-header Transactions
+  //-     .items#transaction-list
+  //-       each tx in recentTransactions
+  //-         li.item(data-category-id=tx.categoryId)
+  //-           span #{tx.description}
+  //-           span.expense #{tx.amount}$
+  //-     li.add-expense + Add expense
+
+  <app-dashboard></app-dashboard>
 
