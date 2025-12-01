@@ -1,9 +1,19 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const ctrlDashboard = require('../controllers/dashboard');
+const ctrlUsers = require('../controllers/user');
+const ctrlOthers = require('../controllers/others');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+/* Dashboard pages */
+router.get('/', ctrlDashboard.home);
+
+/* User pages */
+router.get('/login', ctrlUsers.login);
+router.post('/login', ctrlUsers.loginPost);
+router.get('/signup', ctrlUsers.signup);
+router.post('/signup', ctrlUsers.signupPost);
+
+/* Other pages */
+router.get('/about', ctrlOthers.about);
 
 module.exports = router;

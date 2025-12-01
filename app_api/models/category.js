@@ -1,6 +1,11 @@
 const mongoose = require('mongoose');
 
 const categorySchema = new mongoose.Schema({
+  budgetId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Budget',
+    required: true
+  },
   categoryName: {
     type: String,
     required: true,
@@ -11,6 +16,9 @@ const categorySchema = new mongoose.Schema({
     required: true,
     match: /^#([0-9A-F]{3}){1,2}$/i
   }
-},{ collection: 'category' });
+}, {
+  collection: 'category',
+  timestamps: true
+});
 
 module.exports = mongoose.model('Category', categorySchema);
