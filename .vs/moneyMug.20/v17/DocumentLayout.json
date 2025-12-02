@@ -1,0 +1,330 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\public\\stylesheets\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\stylesheets\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\public\\stylesheets\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\stylesheets\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\layout.pug||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\views\\layout.pug||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\error.pug||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\views\\error.pug||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\login.pug||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\views\\login.pug||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\dashboard.pug||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\views\\dashboard.pug||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\public\\javascripts\\bootstrap.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\javascripts\\bootstrap.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\controllers\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\controllers\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\controllers\\dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\controllers\\dashboard.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\models\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\models\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\routes\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\routes\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\routes\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\routes\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\models\\locations.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\models\\locations.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\bin\\www||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\www||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\index.pug||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\views\\index.pug||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\controllers\\others.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app_server\\controllers\\others.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "error.pug",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\error.pug",
+              "RelativeDocumentMoniker": "app_server\\views\\error.pug",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\error.pug",
+              "RelativeToolTip": "app_server\\views\\error.pug",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-10-22T11:41:05.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "layout.pug",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\layout.pug",
+              "RelativeDocumentMoniker": "app_server\\views\\layout.pug",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\layout.pug",
+              "RelativeToolTip": "app_server\\views\\layout.pug",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-10-22T11:25:59.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "login.pug",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\login.pug",
+              "RelativeDocumentMoniker": "app_server\\views\\login.pug",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\login.pug",
+              "RelativeToolTip": "app_server\\views\\login.pug",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-10-22T11:25:58.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login.css",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\public\\stylesheets\\login.css",
+              "RelativeDocumentMoniker": "public\\stylesheets\\login.css",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\public\\stylesheets\\login.css",
+              "RelativeToolTip": "public\\stylesheets\\login.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-22T11:35:38.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\public\\stylesheets\\style.css",
+              "RelativeDocumentMoniker": "public\\stylesheets\\style.css",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\public\\stylesheets\\style.css",
+              "RelativeToolTip": "public\\stylesheets\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-22T11:26:14.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dashboard.pug",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\dashboard.pug",
+              "RelativeDocumentMoniker": "app_server\\views\\dashboard.pug",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\dashboard.pug",
+              "RelativeToolTip": "app_server\\views\\dashboard.pug",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-10-22T11:41:04.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "users.js",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\controllers\\users.js",
+              "RelativeDocumentMoniker": "app_server\\controllers\\users.js",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\controllers\\users.js",
+              "RelativeToolTip": "app_server\\controllers\\users.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-22T11:22:49.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "bootstrap.min.js",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\public\\javascripts\\bootstrap.min.js",
+              "RelativeDocumentMoniker": "public\\javascripts\\bootstrap.min.js",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\public\\javascripts\\bootstrap.min.js",
+              "RelativeToolTip": "public\\javascripts\\bootstrap.min.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-22T11:26:06.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "app.js",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app.js",
+              "RelativeDocumentMoniker": "app.js",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app.js",
+              "RelativeToolTip": "app.js",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-22T11:28:57.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dashboard.js",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\controllers\\dashboard.js",
+              "RelativeDocumentMoniker": "app_server\\controllers\\dashboard.js",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\controllers\\dashboard.js",
+              "RelativeToolTip": "app_server\\controllers\\dashboard.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-22T11:22:51.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "db.js",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\models\\db.js",
+              "RelativeDocumentMoniker": "app_server\\models\\db.js",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\models\\db.js",
+              "RelativeToolTip": "app_server\\models\\db.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-22T11:23:30.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "users.js",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\routes\\users.js",
+              "RelativeDocumentMoniker": "app_server\\routes\\users.js",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\routes\\users.js",
+              "RelativeToolTip": "app_server\\routes\\users.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-22T11:27:00.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "locations.js",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\models\\locations.js",
+              "RelativeDocumentMoniker": "app_server\\models\\locations.js",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\models\\locations.js",
+              "RelativeToolTip": "app_server\\models\\locations.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-22T11:21:56.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\routes\\index.js",
+              "RelativeDocumentMoniker": "app_server\\routes\\index.js",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\routes\\index.js",
+              "RelativeToolTip": "app_server\\routes\\index.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-22T11:22:26.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "www",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\bin\\www",
+              "RelativeDocumentMoniker": "bin\\www",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\bin\\www",
+              "RelativeToolTip": "bin\\www",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-22T11:26:01.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "index.pug",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\index.pug",
+              "RelativeDocumentMoniker": "app_server\\views\\index.pug",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\views\\index.pug",
+              "RelativeToolTip": "app_server\\views\\index.pug",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-10-22T11:26:00.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "others.js",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\controllers\\others.js",
+              "RelativeDocumentMoniker": "app_server\\controllers\\others.js",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\app_server\\controllers\\others.js",
+              "RelativeToolTip": "app_server\\controllers\\others.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-22T11:23:21.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "package-lock.json",
+              "DocumentMoniker": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\package-lock.json",
+              "RelativeDocumentMoniker": "package-lock.json",
+              "ToolTip": "C:\\Users\\StudentVladislavOnis\\Documents\\moneyMug.20\\package-lock.json",
+              "RelativeToolTip": "package-lock.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-22T11:21:27.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
