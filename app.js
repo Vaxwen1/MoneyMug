@@ -1,31 +1,39 @@
 const express = require('express');
 
-var fs = require('fs');
-var http = require('http');
-var https = require('https');
+const fs = require('fs');
+const http = require('http');
+const https = require('https');
 
-var privateKey  = fs.readFileSync('./sslcert/key.pem', 'utf8');
-var certificate = fs.readFileSync('./sslcert/cert.pem', 'utf8');
+const privateKey  = fs.readFileSync('./sslcert/key.pem', 'utf8');
+const certificate = fs.readFileSync('./sslcert/cert.pem', 'utf8');
+const credentials = { key: privateKey, cert: certificate };
 
-var credentials = { key: privateKey, cert: certificate };
+// ---------------- PASSPORT + SESSION ----------------
+const session = require('express-session');
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
 
 const path = require('path');
-const favicon = require('serve-favicon');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
+
 require('./app_api/models/db');
+
+
+require('./app_api/models/user');
+const User = mongoose.model('User');
 
 const apiRoutes = require('./app_api/routes/index');
 const serverRoutes = require('./app_server/routes/index');
 
-
 const app = express();
 
-// ---------------- CORS  ----------------
+// ---------------- CORS ----------------
 app.use((req, res, next) => {
-  // Якщо ти все ще тестуєш Angular через ng serve на 4200:
   res.header('Access-Control-Allow-Origin', 'http://localhost:4200');
   res.header(
     'Access-Control-Allow-Headers',
@@ -53,32 +61,79 @@ app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+// ---------------- SESSION + PASSPORT INITIALIZATION ----------------
+app.use(session({
+  secret: 'moneyMugSecretKey',  
+  resave: false,
+  saveUninitialized: false
+}));
 
-// app_public static files
-app.use(express.static(path.join(__dirname, 'app_public')));
+app.use(passport.initialize());
+app.use(passport.session());
 
-// Angular static files
+// ---------------- PASSPORT STRATEGY (LocalStrategy) ----------------
+passport.use(new LocalStrategy(
+  { usernameField: 'email' },
+  async (email, password, done) => {
+    try {
+      const user = await User.findOne({ email: email.toLowerCase() });
+      if (!user) {
+        return done(null, false, { message: 'Invalid email or password' });
+      }
+
+      const isMatch = await bcrypt.compare(password, user.passwordHash);
+      if (!isMatch) {
+        return done(null, false, { message: 'Invalid email or password' });
+      }
+
+      return done(null, user);
+    } catch (err) {
+      return done(err);
+    }
+  }
+));
+
+passport.serializeUser((user, done) => {
+  done(null, user.id);
+});
+
+passport.deserializeUser(async (id, done) => {
+  try {
+    const user = await User.findById(id);
+    done(null, user);
+  } catch (err) {
+    done(err);
+  }
+});
+
+// ---------------- AUTH GUARD ----------------
+const requireLogin = (req, res, next) => {
+  if (req.isAuthenticated && req.isAuthenticated()) {
+    return next();
+  }
+  return res.redirect('/login'); // сторінка логіну з Pug
+};
+
+// ---------------- Angular static files (JS, CSS, assets) ----------------
 app.use(
   express.static(
-    path.join(__dirname, 'app_public')
+    path.join(__dirname, 'app_public'),
+    { index: false }
   )
 );
 
 // ---------------- API ----------------
 app.use('/api', apiRoutes);
 
-// ---------------- Server-rendered сторінки (Pug) ----------------
+// ---------------- Server-rendered (Pug) ----------------
 app.use('/', serverRoutes);
 
-// ---------------- Angular SPA (/) ----------------
-app.get('/', (req, res) => {
+// ---------------- Angular SPA (/)----------------
+app.get('/', requireLogin, (req, res) => {
   res.sendFile(
-    path.join(__dirname, 'app_public')
+    path.join(__dirname, 'app_public', 'index.html')
   );
 });
-
 
 // ---------------- 404 handler ----------------
 app.use(function (req, res, next) {
@@ -97,8 +152,9 @@ app.use(function (err, req, res, next) {
   res.render('error');
 });
 
-var httpServer = http.createServer(app);
-var httpsServer = https.createServer(credentials, app);
+// ---------------- HTTP + HTTPS ----------------
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer(credentials, app);
 
 httpServer.listen(8000, () => {
   console.log("HTTP server running at http://localhost:8000");
@@ -107,7 +163,5 @@ httpServer.listen(8000, () => {
 httpsServer.listen(443, () => {
   console.log("HTTPS server running at https://localhost:443");
 });
-
-
 
 module.exports = app;

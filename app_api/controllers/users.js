@@ -84,8 +84,6 @@ const userLogin = async (req, res) => {
         message: 'Invalid email or password.'
       });
     }
-
-    // No session/JWT yet; just confirm success
     return sendJSONresponse(res, 200, {
       message: 'Login successful.',
       user: {

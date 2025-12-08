@@ -1,4 +1,5 @@
 const request = require('request');
+const passport = require('passport');
 
 const apiOptions = {
   server: 'http://localhost:3000'
@@ -24,58 +25,45 @@ const renderSignup = (req, res, formData = {}, error) => {
   });
 };
 
-// GET /login
 const login = (req, res) => {
   renderLogin(req, res);
 };
 
-// POST /login
-const loginPost = (req, res) => {
-  const path = '/api/login';
+const loginPost = (req, res, next) => {
+  passport.authenticate('local', (err, user, info) => {
+    console.log('passport.authenticate callback:', { err, user, info });
 
-  const postData = {
-    email: req.body.email,
-    password: req.body.password
-  };
-
-  const requestOptions = {
-    url: apiOptions.server + path,
-    method: 'POST',
-    json: postData
-  };
-
-  request(requestOptions, (err, response, body) => {
     if (err) {
-      console.error('Error calling API /api/login', err);
+      console.error('Passport error:', err);
+      return next(err);
+    }
+
+    if (!user) {
+      const message =
+        (info && info.message) || 'Невірний email або пароль';
       return renderLogin(
         req,
         res,
-        postData,
-        'Could not log you in right now. Please try again.'
+        { email: req.body.email },
+        message
       );
     }
 
-    const status = response && response.statusCode;
+    req.logIn(user, err => {
+      if (err) {
+        console.error('req.logIn error:', err);
+        return next(err);
+      }
 
-    if (status === 200) {
       return res.redirect('/');
-    }
-
-    let errorMessage = 'Login failed.';
-    if (body && body.message) {
-      errorMessage = body.message;
-    }
-
-    return renderLogin(req, res, postData, errorMessage);
-  });
+    });
+  })(req, res, next); 
 };
 
-// GET /signup
 const signup = (req, res) => {
   renderSignup(req, res);
 };
 
-// POST /signup
 const signupPost = (req, res) => {
   const path = '/api/users';
 
@@ -100,7 +88,7 @@ const signupPost = (req, res) => {
         req,
         res,
         postData,
-        'Could not register user right now. Please try again.'
+        'Could not register right now. Please try again.'
       );
     }
 

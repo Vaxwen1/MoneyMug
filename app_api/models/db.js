@@ -14,4 +14,5 @@ mongoose.connect(dbURI).then(
 
 require('./transaction');
 require('./category');
+require('./budget');
 require('./user');

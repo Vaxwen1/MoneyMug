@@ -1,29 +1,28 @@
 const express = require('express');
 const router = express.Router();
 
+
+const ctrlUsers = require('../controllers/users');
 const ctrlCategories = require('../controllers/categories');
 const ctrlTransactions = require('../controllers/transactions');
-const ctrlUsers = require('../controllers/users');
 
-// Categories
-router
-  .route('/categories')
-  .get(ctrlCategories.categoryReadAll)
-  .post(ctrlCategories.categoryCreate);
+// ---------------- Users ----------------
 
-// Transactions
-router
-  .route('/transactions/recent')
-  .get(ctrlTransactions.transactionListByRecentDate);
+router.post('/users', ctrlUsers.userCreate);
 
-// Users - registration
-router
-  .route('/users')
-  .post(ctrlUsers.userCreate);
+router.post('/login', ctrlUsers.userLogin);
 
-// Users - login
-router
-  .route('/login')
-  .post(ctrlUsers.userLogin);
+// ---------------- Categories ----------------
 
+router.get('/categories', ctrlCategories.categoriesList);
+
+// ---------------- Transactions ----------------
+
+
+router.get(
+  '/transactions/recent',
+  ctrlTransactions.recentTransactions
+);
+
+// ---------------- EXPORT ----------------
 module.exports = router;
