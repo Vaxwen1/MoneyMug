@@ -23,7 +23,7 @@ const serverRoutes = require('./app_server/routes/index');
 
 const app = express();
 
-// ---------------- CORS (потрібно тільки якщо фронт на 4200) ----------------
+// ---------------- CORS  ----------------
 app.use((req, res, next) => {
   // Якщо ти все ще тестуєш Angular через ng serve на 4200:
   res.header('Access-Control-Allow-Origin', 'http://localhost:4200');
